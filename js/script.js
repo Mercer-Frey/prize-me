@@ -23,8 +23,8 @@
 
 		window.addEventListener('scroll', showButtonTop);
 
-		mainButton.addEventListener('click', scrollToAnchor);
-		blankSampleButton.addEventListener('click', scrollToAnchor);
+		mainButton.addEventListener('click', scrollToAnchor.bind(mainButton, 500, 200));
+		blankSampleButton.addEventListener('click', scrollToAnchor.bind(blankSampleButton, 500, 350));
 
 		diplomaPicture.addEventListener('click', debounce(pictureZoom, 100));
 		sliderZoom.addEventListener('click', debounce(pictureZoom, 100));
@@ -109,7 +109,7 @@
 		}
 	}
 
-	function scrollToAnchor(animationTime = 500, framesCount = 500){
+	function scrollToAnchor(animationTime = 500, framesCount = 550){
 		const anchor = this;
 	    
 	    let coordY = document.querySelector(anchor.getAttribute('data-href')).getBoundingClientRect().top + window.pageYOffset;
