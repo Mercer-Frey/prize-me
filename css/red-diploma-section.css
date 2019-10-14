@@ -1,0 +1,317 @@
+.red-diploma-section{
+  color: #000;
+  padding: 23px;
+}
+.red-diploma-section__congratulation{
+  border-bottom: 11px solid #DBAB00;
+  border-radius: 20px;
+  position: relative;
+}
+.red-diploma-section__congratulation:before, 
+.red-diploma-section__congratulation:after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 150%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.red-diploma-section__congratulation:before{
+  background-image: url(../img/Laurel-left.png);
+  left: -155px;
+  bottom: -14px;
+}
+.red-diploma-section__congratulation:after{
+  background-image: url(../img/Laurel-right.png);
+  right: -155px;
+  bottom: -13px;
+  background-position: 100%;
+}
+.red-diploma-section__congratulation p{
+  margin: 0;
+  padding: 0;
+  font-family: Vollkorn;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #030303;  
+  text-align: center;
+}
+.red-diploma-section__congratulation p:nth-child(4){
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 42px;
+  color: #A70B0B;
+}
+
+.red-diploma-section__financial-department h4{
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
+.red-diploma-section__financial-department p{
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+}
+.red-diploma-section__financial-department p:nth-child(4){
+  padding: 20px 60px;
+  background: rgba(242, 214, 116, 0.58);
+  font-weight: bold;
+}
+.red-diploma-section__diploma{
+  padding: 20px;
+  position: relative;
+}
+.red-diploma-section__diploma img{
+  width: 100%;
+  cursor: pointer;
+}
+.red-diploma-section__diploma-button p{
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 20px 40px;
+  color: #fff;
+  background: #A70B0B;
+  box-shadow: 0px 0px 15px #DD9E23;
+}
+.red-diploma-section__thanks-to{
+  border: 11px solid #DBAB00;
+  margin-bottom: 30px;
+}
+.red-diploma-section__thanks-to p{
+  font-family: Vollkorn;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #A70B0B; 
+  padding: 10px 50px;
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 1199px){
+  
+}
+@media only screen and (max-width: 991px){
+
+  .red-diploma-section__congratulation{
+    border-bottom: 8px solid #DBAB00;
+    border-radius: 20px;
+  }
+  .red-diploma-section__congratulation:before, 
+  .red-diploma-section__congratulation:after{
+    height: 100%;
+    width: 150%;
+    bottom: -37px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .red-diploma-section__congratulation:before{
+    left: -220px;
+  }
+  .red-diploma-section__congratulation:after{
+    right: -220px;
+  }
+  .red-diploma-section__congratulation p{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .red-diploma-section__congratulation p:nth-child(3){
+    font-size: 25px;
+  }
+  .red-diploma-section__congratulation p:nth-child(4){
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 35px;
+  }
+  .red-diploma-section__financial-department h4{
+    text-align: center;
+    margin: 10px;
+  }
+  .red-diploma-section__financial-department p{
+    margin: 10px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .red-diploma-section__diploma-button p{
+    font-size: 18px;
+    line-height: 26px;
+    padding: 10px 20px;
+    margin: 15px 0;
+  }  
+  .red-diploma-section__thanks-to p{
+    font-size: 28px;
+    line-height: 38px;
+    padding: 10px 40px;
+  }  
+}
+@media only screen and (max-width: 767px){
+  .red-diploma-section{
+    padding: 23px 0;
+  }  
+  .red-diploma-section__congratulation:before, 
+  .red-diploma-section__congratulation:after{
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    bottom: -46px;
+  }  
+  .red-diploma-section__congratulation:before{
+    left: -210px;
+  }
+  .red-diploma-section__congratulation:after{
+    right: -210px;
+  }
+
+  .red-diploma-section__financial-department h4{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px; 
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .red-diploma-section__financial-department p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .red-diploma-section__financial-department p:nth-child(4){
+    margin: 0;
+    padding: 15px 40px;
+  }
+  .red-diploma-section__diploma-button p{
+    padding: 20px 40px;
+  }    
+  .red-diploma-section__thanks-to{
+    border: 8px solid #DBAB00;
+  }
+  .red-diploma-section__thanks-to p{
+    font-size: 26px;
+    line-height: 30px;
+    padding: 10px 10px;
+  }   
+}
+@media only screen and (max-width: 575px){
+  .red-diploma-section__congratulation{
+    border-bottom: none;
+  }  
+  .red-diploma-section__congratulation:before, 
+  .red-diploma-section__congratulation:after{
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    bottom: -60px;
+  }    
+  .red-diploma-section__congratulation:before{
+    left: -30px;
+  }
+  .red-diploma-section__congratulation:after{
+    right: -30px;
+  }  
+  .red-diploma-section__congratulation p{
+    font-size: 20px;
+    line-height: 22px;
+  }  
+  .red-diploma-section__congratulation p:nth-child(3){
+    font-size: 18px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .red-diploma-section__congratulation p:nth-child(4){
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 25px;
+    width: 60%;
+  }
+  .red-diploma-section__financial-department p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .red-diploma-section__financial-department p:nth-child(4){
+    padding: 10px 30px;
+  }
+  .red-diploma-section__thanks-to p{
+    font-size: 22px;
+    line-height: 30px;
+    padding: 0;
+  }     
+}
+@media only screen and (max-width: 404px){    
+  .red-diploma-section__congratulation p:nth-child(4){
+    width: 90%;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 320px){    
+  .red-diploma-section__congratulation:before, 
+  .red-diploma-section__congratulation:after{
+    bottom: -50px;
+  }    
+  .red-diploma-section__congratulation:before{
+    left: -10px;
+    -webkit-transform: rotateZ(-5deg) scale(.9);
+            transform: rotateZ(-5deg) scale(.9);
+  }
+  .red-diploma-section__congratulation:after{
+    right: -10px;
+    -webkit-transform: rotateZ(5deg) scale(.9);
+            transform: rotateZ(5deg) scale(.9);
+  }  
+  .red-diploma-section__financial-department h4{
+    width: 90%;
+    margin-top: 70px; 
+    font-size: 16px;
+  }
+  .red-diploma-section__financial-department p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .red-diploma-section__financial-department p:nth-child(4){
+    padding: 10px;
+  }  
+  .red-diploma-section__thanks-to{
+    border: 5px solid #DBAB00;
+  }  
+}
+
+.overlay{
+  position: fixed;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 30% 20%;
+  padding-top: 27%;
+  background-color: rgba(0,0,0, .4);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.overlay img{
+  display: block;
+  margin: 0 auto;
+  transition: all .4s ease;
+}
+.zoom-off{
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1111;
+}
+.zoom-on{
+  opacity: 1;
+  visibility: visible;
+  z-index: 10000;
+}
+.zoom-off img{transform: scale(0);}
+.zoom-on img{transform: scale(1);}

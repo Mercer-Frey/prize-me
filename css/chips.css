@@ -1,0 +1,87 @@
+.chips {
+    padding: 10px 20px;
+    margin: 20px 10px 0;
+    border-radius: 12px;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    z-index: 101;
+    transition: all .3s ease;
+    width: 80%;
+    transform: translate(120%);
+    opacity: 0;
+    animation: showChips 3.2s;
+}
+
+.chips-field {
+    display: flex;
+    justify-content: start;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    max-height: 0;
+    background-color: rgba(0,0,0, .05);
+}
+.success{
+    background-color: rgba(51,153,0, .6);
+}
+.warning{
+    background-color: rgba(255,204,0, .9);
+}
+.error{
+    background-color: rgba(204,51,0, .6);
+}
+.btnMs{
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 900;
+    background-color: rgb(151, 247, 247);
+}
+
+@keyframes showChips {
+  0% {
+    transform: translate(120%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(120%);
+    opacity: 0;
+  }
+}
+
+
+@media only screen and (max-width: 1199px){
+    .chips-field{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 991px){
+    .chips-field{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .chips-field{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 575px){
+    .chips-field{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 320px){    
+    .chips-field{
+        width: 70%;
+    }
+}
